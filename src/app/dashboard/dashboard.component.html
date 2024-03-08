@@ -1,0 +1,8 @@
+<div class="row">
+  <div class="cell">
+      <app-customer-list></app-customer-list>
+  </div>
+  <div class="cell">
+      <app-customer-detail *ngIf="customerDataService.viewCustomerDetails | async"></app-customer-detail>
+  </div>
+</div>
